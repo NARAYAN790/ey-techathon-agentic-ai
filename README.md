@@ -1,87 +1,117 @@
-🏥 Agentic AI for Provider Data Validation and Directory Management
+🏥 Agentic AI for Provider Data Validation & Directory Management
 
-An EY Techathon 6.0 Project (Challenge VI – Firstsource) built with Google Gemini API + Streamlit
+An EY Techathon 6.0 Project
+Built with Google Gemini API + Streamlit
 
 🚨 Problem Statement
+
 Healthcare payers maintain millions of provider records — names, addresses, contact info, and licenses — yet 40–80% of this data is inaccurate.
-Manual validation is time-consuming, error-prone, and expensive, leading to member frustration, regulatory risks, and operational inefficiency.
+Manual validation is slow, error-prone, and costly, leading to member frustration, compliance risks, and inefficiency.
 
 💡 Our Solution
-We built an Agentic AI system that autonomously validates, enriches, and manages healthcare provider data using AI-driven document understanding + public data APIs.
+
+We developed an Agentic AI-powered system that autonomously validates and enriches healthcare provider data using AI-driven document understanding and public APIs.
 
 Users can:
-📂 Upload provider directories or scanned PDFs
-🔍 Automatically validate contact and license information
-📊 View enriched profiles with confidence scores
-❓ Ask queries (e.g., “Which providers have missing licenses?”)
-⬇️ Export validated data and reports (PDF/TXT)
 
-This empowers healthcare payers to maintain accurate, compliant, and updated provider directories — cutting down manual work and improving patient experience.
+📂 Upload provider credential PDFs or CSV data
+
+🔍 View verified and enriched profiles with confidence scores
+
+📊 See discrepancies and recommended actions
+
+⬇️ Export updated records and summary reports
+
+This reduces manual effort, ensures data accuracy, and keeps directories compliant and up to date.
 
 ✨ Core Features
-🩺 Provider Validation Agent → Cross-verifies names, contact info, and licenses using NPI Registry, Google Maps, and public APIs
-🧠 Information Enrichment Agent → Fills missing fields like specialties, affiliations, certifications
-📄 Document Parser → Extracts structured data from PDFs and scanned forms
-📊 Quality Assurance Agent → Flags inconsistencies, generates confidence scores, and prepares validation reports
-🌐 Multi-Language Support → English ↔ Hindi ↔ Marathi ↔ Tamil
-⬇️ Export Options → Download validated reports as PDF or TXT
+
+🩺 Provider Validation Agent → Cross-verifies contact info via NPI Registry, Google Maps, and public APIs
+
+🧠 Information Enrichment Agent → Fills missing fields (specializations, affiliations, certifications)
+
+📄 Document Parser → Extracts structured data from scanned PDFs
+
+📊 Quality Assurance Agent → Generates confidence scores and flags inconsistencies
+
+🌐 Multi-Language Support → Auto-translation between English and Hindi
+
+⬇️ Report Generator → Exports validated records (PDF/TXT)
 
 🛠️ Tech Stack
-⚡ Streamlit → UI Framework
-🤖 Google Gemini API → AI backend
-📄 PyPDF2 → PDF data extraction
-🖨️ FPDF → Report export
-🌍 BeautifulSoup + Requests → Web scraping for data validation
+
+⚡ Streamlit – Interactive UI framework
+
+🤖 Google Gemini API – AI backend for validation & reasoning
+
+📄 PyPDF2 / FPDF – Text extraction & PDF export
+
+🌍 BeautifulSoup + Requests – Web scraping for public data
+
 🐍 Python 3.10+
 
-🚀 Run Locally & Setup
+🚀 Run Locally
 
-🟢 Step 1: Clone the repository
+# 1️⃣ Clone the repository
 git clone https://github.com/NARAYAN790/ey-techathon-agentic-ai.git
-
-🔵 Step 2: Navigate into project folder
 cd ey-techathon-agentic-ai
 
-🟣 Step 3: Create a virtual environment
+# 2️⃣ Create & activate virtual environment
 python -m venv venv
+venv\Scripts\activate   # on Windows
+# source venv/bin/activate  # on Mac/Linux
 
-🟠 Step 4: Activate the environment
-Windows: venv\Scripts\activate
-Mac/Linux: source venv/bin/activate
-
-🟡 Step 5: Install dependencies
+# 3️⃣ Install dependencies
 pip install -r requirements.txt
 
-🔴 Step 6: Add your API key
-Create/Edit .streamlit/secrets.toml and add:
+# 4️⃣ Add your Gemini API key
+# Edit .streamlit/secrets.toml
 GEMINI_API_KEY = "your-api-key-here"
 
-⚫ Step 7: Run the Streamlit app
+# 5️⃣ Run the app
 streamlit run app.py
 
 
 🧭 Judge Walkthrough
-1️⃣ Upload a provider directory (CSV or scanned PDF)
-2️⃣ View auto-validated profiles with enriched data
-3️⃣ Ask: “Which providers have outdated licenses?” → AI explains clearly
-4️⃣ View confidence scores and flagged entries
-5️⃣ Export final validated provider directory
+
+
+Upload a sample provider dataset (CSV or scanned PDF)
+
+
+The AI validates each provider record and highlights errors
+
+
+View a summary report with confidence scores
+
+
+Export updated directory as PDF/TXT
+
+
+(Optional) Ask: “Which providers have missing licenses?”
+
+
 
 💡 Future Extensions
-☁️ Vertex AI Integration → Scale for enterprise use
-📱 Gemma Deployment → On-device privacy-focused version
-🔗 API Integration → NPI Registry, State Medical Boards, Google Maps
-⚙️ Automated Scheduling → Daily re-validation of provider records
+
+
+☁️ Vertex AI Integration – Enterprise-scale data pipelines
+
+
+📱 Gemma Deployment – On-device privacy version
+
+
+🔗 API Expansion – Integration with state medical boards & insurance registries
+
+
 
 👨‍💻 Author
 Narayan Gupta
-🎓 B.Tech in Electronics & Communication – Dr. A.I.T.D Kanpur
+🎓 B.Tech (Electronics & Communication) – Dr. A.I.T.D Kanpur
 💡 Interests: AI, NLP, Data Science, Generative AI
-
-🌐 LinkedIn
- | 🌐 GitHub
- | 🌐 Project Repo
+🌐 LinkedIn | GitHub | Project Repo
 
 🏆 Acknowledgements
 Developed for EY Techathon 6.0 – Challenge VI (Firstsource)
 Powered by Google Gemini API + Streamlit
+
+
