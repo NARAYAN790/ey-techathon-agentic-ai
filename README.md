@@ -1,8 +1,3 @@
-🏥 Agentic AI for Provider Data Validation & Directory Management
-
-An EY Techathon 6.0 Project
-Built with Google Gemini API + Streamlit
-
 🚨 Problem Statement
 
 Healthcare payers maintain millions of provider records — names, addresses, contact info, and licenses — yet 40–80% of this data is inaccurate.
@@ -51,7 +46,6 @@ This reduces manual effort, ensures data accuracy, and keeps directories complia
 🐍 Python 3.10+
 
 🚀 Run Locally
-
 # 1️⃣ Clone the repository
 git clone https://github.com/NARAYAN790/ey-techathon-agentic-ai.git
 cd ey-techathon-agentic-ai
@@ -71,47 +65,32 @@ GEMINI_API_KEY = "your-api-key-here"
 # 5️⃣ Run the app
 streamlit run app.py
 
-
 🧭 Judge Walkthrough
-
 
 Upload a sample provider dataset (CSV or scanned PDF)
 
-
 The AI validates each provider record and highlights errors
-
 
 View a summary report with confidence scores
 
-
 Export updated directory as PDF/TXT
-
 
 (Optional) Ask: “Which providers have missing licenses?”
 
-
-
 💡 Future Extensions
-
 
 ☁️ Vertex AI Integration – Enterprise-scale data pipelines
 
-
 📱 Gemma Deployment – On-device privacy version
-
 
 🔗 API Expansion – Integration with state medical boards & insurance registries
 
-
-
 👨‍💻 Author
+
 Narayan Gupta
 🎓 B.Tech (Electronics & Communication) – Dr. A.I.T.D Kanpur
 💡 Interests: AI, NLP, Data Science, Generative AI
-🌐 LinkedIn | GitHub | Project Repo
 
-🏆 Acknowledgements
-Developed for EY Techathon 6.0 – Challenge VI (Firstsource)
-Powered by Google Gemini API + Streamlit
-
-
+🌐 LinkedIn-https://www.linkedin.com/in/narayan-gupta-19903028b 
+🌐 GitHub-https://github.com/NARAYAN790 
+🌐 Project Repo-https://github.com/NARAYAN790/ey-techathon-agentic-ai  
